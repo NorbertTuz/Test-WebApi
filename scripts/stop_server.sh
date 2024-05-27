@@ -1,3 +1,6 @@
 #!/bin/bash
-# Stop the application if it's running
-pkill -f 'dotnet my-web-api.dll'
+isExistApp = `pgrep httpd`
+if [[ -n  $isExistApp ]]; then
+    service httpd stop        
+fi
+
