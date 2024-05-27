@@ -1,26 +1,19 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /home/ec2-user/my-web-api
+  - source: /index.html
+    destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies.sh
+    - location: scripts/install_dependencies
       timeout: 300
-      runas: ec2-user
-  AfterInstall:
-    - location: scripts/deploy_application.sh
+      runas: root
+    - location: scripts/start_server
       timeout: 300
-      runas: ec2-user
-  ApplicationStart:
-    - location: scripts/start_server.sh
-      timeout: 300
-      runas: ec2-user
+      runas: root
   ApplicationStop:
-    - location: scripts/stop_server.sh
+    - location: scripts/stop_server
       timeout: 300
-      runas: ec2-user
-  ValidateService:
-    - location: scripts/validate_service.sh
-      timeout: 300
-      runas: ec2-user
+      runas: root
+
+
