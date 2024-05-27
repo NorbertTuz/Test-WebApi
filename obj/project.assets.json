@@ -7101,11 +7101,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\Test Ca\\MoviesApi\\MoviesApi.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Test-Ca\\MoviesApi\\MoviesApi.csproj",
       "projectName": "MoviesApi",
-      "projectPath": "C:\\Users\\User\\Desktop\\Test Ca\\MoviesApi\\MoviesApi.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\Test-Ca\\MoviesApi\\MoviesApi.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\Test Ca\\MoviesApi\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Test-Ca\\MoviesApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
